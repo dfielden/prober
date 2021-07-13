@@ -1,0 +1,48 @@
+// COLOR VARIABLES
+$color-white: #ffffff;
+$color-black: #000000;
+$color-grey-lightest: #f3f3f3;
+$color-grey-light: #bebcbe;
+$color-grey-medium: #838083;
+$color-grey-dark: #393739;
+
+$color-primary: $color-grey-dark;
+$color-primary-pale: $color-grey-light;
+
+// BREAK POINTS
+$break-tiny: 280px;
+$break-smallest: 420px;
+$break-small: 760px;
+$break-medium: 1000px;
+$break-large: 1260px;
+$break-largest: 1500px;
+
+
+// FONT VARIABLES
+$font-primary: 'Raleway', sans-serif;
+$font-display: 'Montserrat', sans-serif;
+
+
+/*Universal declaration - will apply these settings to all elements, also select all before and after pseudoelements - prevents strange behaviour*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: inherit; /*forcing inheritance on each element from body - this is considered good practice*/
+}
+
+html {
+  font-size: 62.5%; /*1rem = 10px*/
+  height: 100%;
+  font-family: $font-primary;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 2rem;
+  height: 100%;
+}
+
+
